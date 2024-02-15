@@ -22,7 +22,7 @@ for (let galleryItem of galleryItems) {
 gallery.addEventListener("click", (e) => {
     let originalImage = e.target.getAttribute("data-source")
     console.log(originalImage)
-    let fullScreen = basicLightbox.create(`<img src="${originalImage}" width="800" height="600"/>`)
-    fullScreen.show();
+    let instance = basicLightbox.create(`<img src="${originalImage}" width="800" height="600"/>`)
+    instance.show();
 
 })
